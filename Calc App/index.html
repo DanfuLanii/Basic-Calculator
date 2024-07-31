@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+<body class="flex justify-center items-center h-screen m-0 bg-white calc">
+    <div class="bg-blue-100 rounded-3xl overflow-hidden box-border shadow-lg w-96 calc-keys">
+        <div class="p-4 m-2">
+            <input type="text" value="0" class="bg-blue-200 outline-none calc-display" readonly>
+            <button data-action="clear" class="font-bold rounded-sm bg-blue-700 w-[100px] hover:brightness-110">C</button>
+        </div>
+        <div class="grid gap-2 grid-cols-4 grid-rows-4 p-3 box-border">
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">7</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">8</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">9</button>
+            <button data-action="divide" class="p-5 font-bold rounded-md bg-blue-400 hover:brightness-110 key--operator">/</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">4</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">5</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">6</button>
+            <button data-action="multiply" class="p-5 font-bold rounded-md bg-blue-400 hover:brightness-110 key--operator">x</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">1</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">2</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">3</button>
+            <button data-action="subtract" class="p-5 font-bold rounded-md bg-blue-400 hover:brightness-110 key--operator">-</button>
+            <button class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">0</button>
+            <button data-action="decimal" class="p-5 font-bold rounded-md bg-blue-300 hover:brightness-110">.</button>
+            <button data-action="calculate" class="p-5 font-bold rounded-md bg-blue-500 hover:brightness-110 key--equal">=</button>
+            <button data-action="add" class="p-5 font-bold rounded-md bg-blue-400 hover:brightness-110 key--operator">+</button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
