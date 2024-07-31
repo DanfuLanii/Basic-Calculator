@@ -39,15 +39,15 @@ keys.addEventListener("click", e =>{
 
         }
         //CALCULATE
-        else if (action === "calculate") {
-            let firstValue = calculator.dataset.firstValue;
-            const operator = calculator.dataset.operator;
-            const secondValue = displayedNum;
+        // else if (action === "calculate") {
+        //     let firstValue = calculator.dataset.firstValue;
+        //     const operator = calculator.dataset.operator;
+        //     const secondValue = displayedNum;
 
-            if (firstValue && operator) {
-                const expression = 
-            }
-        }
+        //     if (firstValue && operator) {
+        //         const expression = 
+        //     }
+        // }
 
     }
 })
